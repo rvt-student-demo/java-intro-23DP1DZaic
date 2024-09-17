@@ -248,30 +248,48 @@ public class App
 
 
 
-System.out.println("Give speed: ");
-String speed = scanner.nextLine();
-int speedAsInt = Integer.valueOf(speed);
+// System.out.println("Give speed: ");
+// String speed = scanner.nextLine();
+// int speedAsInt = Integer.valueOf(speed);
 
-if (speedAsInt > 120) {
-  System.out.println("Speeding ticket!");
+// if (speedAsInt > 120) {
+//   System.out.println("Speeding ticket!");
+// }
+
+
+
+
+
+// int number = 3;
+
+// if (number == 1) {
+//     System.out.println("The number is one"); //skip line, jo number != 1
+// } else if (number == 2) {
+//     System.out.println("The given number is two"); //skip line, jo number != 1
+// } else if (number == 3) {
+//     System.out.println("The number must be three!"); //no skip, number = 1
+// } else {
+//     System.out.println("Something else!");
+// }
+
+
+System.out.println("Give me the first number: ");
+String number1 = scanner.nextLine();
+int number1AsInt = Integer.valueOf(number1);
+
+
+System.out.println("Give me the second number: ");
+String number2 = scanner.nextLine();
+int number2AsInt = Integer.valueOf(number2);
+
+
+if (number1AsInt > number2AsInt) {
+  System.out.println("Greater number is: " + number1AsInt );
+} else if (number1AsInt < number2AsInt) {
+  System.out.println("Greater number is: " + number2AsInt );
+} else {
+  System.out.println("The numbers are equal!");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
