@@ -273,51 +273,79 @@ public class App
 // }
 
 
-System.out.println("Give me the first number: ");
-String number1 = scanner.nextLine();
-int number1AsInt = Integer.valueOf(number1);
+// System.out.println("Give me the first number: ");
+// String number1 = scanner.nextLine();
+// int number1AsInt = Integer.valueOf(number1);
 
 
-System.out.println("Give me the second number: ");
-String number2 = scanner.nextLine();
-int number2AsInt = Integer.valueOf(number2);
+// System.out.println("Give me the second number: ");
+// String number2 = scanner.nextLine();
+// int number2AsInt = Integer.valueOf(number2);
 
 
-if (number1AsInt > number2AsInt) {
-  System.out.println("Greater number is: " + number1AsInt );
-} else if (number1AsInt < number2AsInt) {
-  System.out.println("Greater number is: " + number2AsInt );
+// if (number1AsInt > number2AsInt) {
+//   System.out.println("Greater number is: " + number1AsInt );
+// } else if (number1AsInt < number2AsInt) {
+//   System.out.println("Greater number is: " + number2AsInt );
+// } else {
+//   System.out.println("The numbers are equal!");
+// }
+
+
+
+
+// int number = 5;
+
+// if (number == 0) {
+//     System.out.println("The number is zero.");
+// } else if (number > 0) {
+//     System.out.println("The number is greater than zero.");
+// } else if (number > 2) {
+//     System.out.println("The number is greater than two.");
+// } else {
+//     System.out.println("The number is less than zero.");
+// }
+
+
+// OUTPUT:   The number is greater than zero.
+
+
+// The example above prints the string "The number is greater than zero." even if the condition number > 2 is true.
+//  The comparison stops at the first condition that evaluates to true.
+
+
+
+
+// Logical and -> &&
+// Logical or -> ||
+// Logical not -> !
+
+// if (!(number > 10))     ja NAV number lielāks par 10 
+
+
+
+System.out.println("Give points [0-100]: ");
+String grade = scanner.nextLine();
+int gradeInt = Integer.valueOf(grade);
+
+
+if (gradeInt < 0) {
+  System.out.println("Impossible!");
+} else if (gradeInt > 0 && gradeInt < 49) {
+  System.out.println("Failed!");
+} else if (gradeInt > 50 && gradeInt < 59) {
+  System.out.println("1");
+} else if (gradeInt > 60 && gradeInt < 69) {
+    System.out.println("2");
+} else if (gradeInt > 70 && gradeInt < 79) {
+  System.out.println("3");
+} else if (gradeInt > 80 && gradeInt < 89) {
+  System.out.println("4");
+} else if (gradeInt > 90 && gradeInt < 100) {
+  System.out.println("5");
 } else {
-  System.out.println("The numbers are equal!");
+  System.out.println("Incredible!");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
