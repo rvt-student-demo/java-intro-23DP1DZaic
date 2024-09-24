@@ -324,36 +324,53 @@ public class App
 
 
 
-System.out.println("Give points [0-100]: ");
-String grade = scanner.nextLine();
-int gradeInt = Integer.valueOf(grade);
+// System.out.println("Give points [0-100]: ");
+// String grade = scanner.nextLine();
+// int gradeInt = Integer.valueOf(grade);
 
 
-if (gradeInt < 0) {
-  System.out.println("Impossible!");
-} else if (gradeInt > 0 && gradeInt < 49) {
-  System.out.println("Failed!");
-} else if (gradeInt > 50 && gradeInt < 59) {
-  System.out.println("1");
-} else if (gradeInt > 60 && gradeInt < 69) {
-    System.out.println("2");
-} else if (gradeInt > 70 && gradeInt < 79) {
-  System.out.println("3");
-} else if (gradeInt > 80 && gradeInt < 89) {
-  System.out.println("4");
-} else if (gradeInt > 90 && gradeInt < 100) {
-  System.out.println("5");
+// if (gradeInt < 0) {
+//   System.out.println("Impossible!");
+// } else if (gradeInt > 0 && gradeInt < 49) {
+//   System.out.println("Failed!");
+// } else if (gradeInt > 50 && gradeInt < 59) {
+//   System.out.println("1");
+// } else if (gradeInt > 60 && gradeInt < 69) {
+//     System.out.println("2");
+// } else if (gradeInt > 70 && gradeInt < 79) {
+//   System.out.println("3");
+// } else if (gradeInt > 80 && gradeInt < 89) {
+//   System.out.println("4");
+// } else if (gradeInt > 90 && gradeInt < 100) {
+//   System.out.println("5");
+// } else {
+//   System.out.println("Incredible!");
+// }
+
+
+
+
+
+
+// For example 6000€ gift implies 180€ of gift tax (100 + (6000-5000) * 0.08), 
+
+
+System.out.println("Value of gift?");
+String gift = scanner.nextLine();
+int giftInt = Integer.valueOf(gift);
+if (giftInt < 5000) {
+  System.out.println("No tax!");
+} else if (giftInt < 25001) {
+  System.out.println("Tax: " + (100 + (giftInt - 5000) * 0.08));
+} else if (giftInt < 55001) {
+  System.out.println("Tax: " + (1700 + (giftInt - 25000) * 0.10));
+} else if (giftInt < 200001) {
+  System.out.println("Tax: " + (4700 + (giftInt - 55000) * 0.12));
+} else if (giftInt < 1000001) {
+  System.out.println("Tax: " + (22100 + (giftInt - 200000) * 0.10));
 } else {
-  System.out.println("Incredible!");
+  System.out.println("Tax: " + (142100 + (giftInt - 100000) * 0.17));
 }
-
-
-
-
-
-
-
-
 
 
 
