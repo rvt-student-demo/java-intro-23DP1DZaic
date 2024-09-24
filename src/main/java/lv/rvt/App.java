@@ -395,10 +395,6 @@ public class App
 
 
 
-
-
-
-
 //  Break and Continue functions
 
 
@@ -413,8 +409,6 @@ public class App
 
 //     System.out.println("Your input was " + number);
 // }
-
-
 
 
 
@@ -440,19 +434,93 @@ public class App
 
 
 
-int amount = 0;
+// int amount = 0;
+// int sum = 0;
+// while (true) {
+//   System.out.println("Give a number: ");
+//   int number = Integer.valueOf(scanner.nextLine());
+//   if (number == 0) {
+//     break;
+//   }
+//   sum = sum + number;
+//   amount = amount + 1;
+// }
+// System.out.println("Number of numbers is: " + amount);
+// System.out.println("Sum of numbers is: " + sum);
+
+
+
+
+
+// // While Loop with a Condition
+// int number = 1;
+
+// while (number < 6) {
+//     System.out.println(number);
+//     number++;
+// }
+
+// // tadi pašie
+
+
+
+// //For Loop
+
+
+// for (int i = 0; i < 10; i++) {
+//   System.out.println(i);
+// }
+
+
+// // for (*introducing a variable*; *condition*; *increasing the counter*) {
+// //   // Functionality to be executed
+// // }
+
+
+
+
+
+// int start = Integer.valueOf(scanner.nextLine());
+// int end = 101;
+// for (int i = start; i < end; i++) {
+//     System.out.println(i);
+// }
+
+
+
+
+
+
 int sum = 0;
-while (true) {
-  System.out.println("Give a number: ");
-  int number = Integer.valueOf(scanner.nextLine());
-  if (number == 0) {
-    break;
-  }
-  sum = sum + number;
-  amount = amount + 1;
+System.out.println("Last number?");
+int num = Integer.valueOf(scanner.nextLine());
+for (int i = 1; i < num + 1; i++) {
+    sum = sum + i;
 }
-System.out.println("Number of numbers is: " + amount);
-System.out.println("Sum of numbers is: " + sum);
+
+System.out.println(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
