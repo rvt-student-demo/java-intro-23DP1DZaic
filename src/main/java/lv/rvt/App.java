@@ -355,22 +355,105 @@ public class App
 // For example 6000€ gift implies 180€ of gift tax (100 + (6000-5000) * 0.08), 
 
 
-System.out.println("Value of gift?");
-String gift = scanner.nextLine();
-int giftInt = Integer.valueOf(gift);
-if (giftInt < 5000) {
-  System.out.println("No tax!");
-} else if (giftInt < 25001) {
-  System.out.println("Tax: " + (100 + (giftInt - 5000) * 0.08));
-} else if (giftInt < 55001) {
-  System.out.println("Tax: " + (1700 + (giftInt - 25000) * 0.10));
-} else if (giftInt < 200001) {
-  System.out.println("Tax: " + (4700 + (giftInt - 55000) * 0.12));
-} else if (giftInt < 1000001) {
-  System.out.println("Tax: " + (22100 + (giftInt - 200000) * 0.10));
-} else {
-  System.out.println("Tax: " + (142100 + (giftInt - 100000) * 0.17));
+// System.out.println("Value of gift?");
+// String gift = scanner.nextLine();
+// int giftInt = Integer.valueOf(gift);
+// if (giftInt < 5000) {
+//   System.out.println("No tax!");
+// } else if (giftInt < 25000) {
+//   System.out.println("Tax: " + (100 + (giftInt - 5000) * 0.08));
+// } else if (giftInt < 55000) {
+//   System.out.println("Tax: " + (1700 + (giftInt - 25000) * 0.10));
+// } else if (giftInt < 200000) {
+//   System.out.println("Tax: " + (4700 + (giftInt - 55000) * 0.12));
+// } else if (giftInt < 1000000) {
+//   System.out.println("Tax: " + (22100 + (giftInt - 200000) * 0.10));
+// } else {
+//   System.out.println("Tax: " + (142100 + (giftInt - 100000) * 0.17));
+// }
+
+
+
+
+
+// int numbersRead = 0;
+// int sum = 0;
+
+// while (true) { //infinite loop until numbersRead is 5 (break command exits the loop)
+//     if (numbersRead == 5) {
+//         break;
+//     }
+
+//     System.out.println("Input number");
+//     sum = sum + Integer.valueOf(scanner.nextLine());
+//     numbersRead = numbersRead + 1;
+// }
+
+// System.out.println("The sum of the numbers is " + sum);
+
+
+
+
+
+
+
+
+
+//  Break and Continue functions
+
+
+// while (true) {
+//     System.out.println("Insert positive integers");
+//     int number = Integer.valueOf(scanner.nextLine());
+
+//     if (number <= 0) {
+//         System.out.println("Unfit number! Try again.");
+//         continue;
+//     }
+
+//     System.out.println("Your input was " + number);
+// }
+
+
+
+
+
+
+//if number is 0, exit loop (break)
+
+// while (true) {
+//     System.out.println("Input positive numbers.");
+//     int number = Integer.valueOf(scanner.nextLine());
+
+//     if (number == 0) {
+//         break;
+//     }
+
+//     if (number < 0) {
+//         System.out.println("Unfit number! Try again.");
+//         continue;
+//     }
+
+//     System.out.println("Your input was " + number);
+// }
+
+
+
+
+int amount = 0;
+int sum = 0;
+while (true) {
+  System.out.println("Give a number: ");
+  int number = Integer.valueOf(scanner.nextLine());
+  if (number == 0) {
+    break;
+  }
+  sum = sum + number;
+  amount = amount + 1;
 }
+System.out.println("Number of numbers is: " + amount);
+System.out.println("Sum of numbers is: " + sum);
+
 
 
 
