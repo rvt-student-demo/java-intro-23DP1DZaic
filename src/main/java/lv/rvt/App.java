@@ -490,24 +490,45 @@ public class App
 
 
 
+// int sum = 0;
+// System.out.println("Last number?");
+// int num = Integer.valueOf(scanner.nextLine());
+// for (int i = 1; i < num + 1; i++) {
+//     sum = sum + i;
+// }
 
+// System.out.println(sum);
+
+
+int count = 0;
 int sum = 0;
-System.out.println("Last number?");
-int num = Integer.valueOf(scanner.nextLine());
-for (int i = 1; i < num + 1; i++) {
-    sum = sum + i;
+int even = 0;
+int odd = 0;
+System.out.println("Write numbers: ");
+while (true) {
+  int number = Integer.valueOf(scanner.nextLine());
+  sum = sum + number;
+  count = count + 1;
+  if (number % 2 == 0) {
+    even = even + 1;
+  }
+  else{
+    odd = odd + 1;
+  }
+  if (number == -1) {
+    System.out.println("Thx bye!");
+    break;
+  }
 }
-
-System.out.println(sum);
-
-
-
-
-
-
-
-
-
+count = count - 1;
+sum = sum + 1;
+odd = odd -1;
+double average = sum / count;
+System.out.println("Sum: " + sum);
+System.out.println("Numbers: " + count);
+System.out.println("Average: " + average);
+System.out.println("Even numbers: " + even);
+System.out.println("Odd numbers: " + odd);
 
 
 
@@ -516,8 +537,10 @@ System.out.println(sum);
 
 
 
-
-
+// while (true) { //infinite loop until numbersRead is 5 (break command exits the loop)
+//     if (numbersRead == 5) {
+//         break;
+//     }
 
 
 
