@@ -45,20 +45,15 @@ Scanner scanner = new Scanner(System.in);
 
 
 
-DecreasingCounter counter = new DecreasingCounter(2);
+DecreasingCounter counter = new DecreasingCounter(100);
 
-        counter.printValue();
+counter.printValue();
 
-        counter.decrement();
-        counter.printValue();
+counter.reset();
+counter.printValue();
 
-        counter.decrement();
-        counter.printValue();
-
-
-        counter.decrement();
-        counter.printValue();
-
+counter.decrement();
+counter.printValue();
 
 
     }

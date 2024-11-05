@@ -24,5 +24,12 @@ public class DecreasingCounter {
 
 
 
+    
+    public void reset(){
+        value = 0;
+    }
+    
+
+
 
 }
