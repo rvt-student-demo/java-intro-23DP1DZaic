@@ -45,7 +45,7 @@ Scanner scanner = new Scanner(System.in);
 
 
 
-DecreasingCounter counter = new DecreasingCounter(10);
+DecreasingCounter counter = new DecreasingCounter(2);
 
         counter.printValue();
 
@@ -56,8 +56,10 @@ DecreasingCounter counter = new DecreasingCounter(10);
         counter.printValue();
 
 
+        counter.decrement();
+        counter.printValue();
 
 
-        
+
     }
 }

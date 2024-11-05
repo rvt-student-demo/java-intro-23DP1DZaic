@@ -17,14 +17,12 @@ public class DecreasingCounter {
 
 
     public void decrement() {
+    while (value < 1);
     value = value - 1;
     }
 
 
 
-    // and the other methods go here
 
 
-
-    
 }
