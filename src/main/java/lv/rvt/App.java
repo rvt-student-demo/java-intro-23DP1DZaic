@@ -26,7 +26,7 @@ Scanner scanner = new Scanner(System.in);
 
 
 
-Person pers1 = new Person("John");
+// Person pers1 = new Person("John");
 
 // pers1.printPerson();
 // pers1.growOlder();
@@ -34,14 +34,30 @@ Person pers1 = new Person("John");
 // pers1.growOlder();
 
 
-pers1.printPerson();
+// pers1.printPerson();
 
-int i = 0;
-while ( i != 30) {
-pers1.growOlder();
-pers1.printPerson();
-i = i + 1;
-}
+// int i = 0;
+// while ( i != 30) {
+// pers1.growOlder();
+// pers1.printPerson();
+// i = i + 1;
+// }
 
+
+
+DecreasingCounter counter = new DecreasingCounter(10);
+
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+
+
+
+
+        
     }
 }
