@@ -173,7 +173,15 @@ Scanner scanner = new Scanner(System.in);
 
             PaymentCard card = new PaymentCard(50);
             System.out.println(card.toString());
-                
+
+
+            card.eatAffordably();
+            System.out.println(card);
+    
+            
+            card.eatHeartily();
+            card.eatAffordably();
+            System.out.println(card);
 
 
 
