@@ -10,10 +10,21 @@ import java.util.ArrayList;
 
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args) throws Exception
     {
     //  My code starts here
 Scanner scanner = new Scanner(System.in);
+BufferedReader reader = Utils.getReader("data.csv");
+String line;
+
+while ((line = reader.readLine()) != null) {
+    System.out.println(line);
+}
+
+
+
+
+
 
 
 //     Product product1 = new Product("Maize", 1.20, 13);
@@ -194,17 +205,53 @@ Scanner scanner = new Scanner(System.in);
 //         System.out.println(card2);
 
 
-        PaymentCard card3 = new PaymentCard(10);
-        System.out.println(card3);
+        // PaymentCard card3 = new PaymentCard(10);
+        // System.out.println(card3);
 
-        card3.addMoney(15);
-        System.out.println(card3);
+        // card3.addMoney(15);
+        // System.out.println(card3);
 
-        card3.addMoney(10);
-        System.out.println(card3);
+        // card3.addMoney(10);
+        // System.out.println(card3);
 
-        card3.addMoney(200);
-        System.out.println(card3);
+        // card3.addMoney(200);
+        // System.out.println(card3);
+
+
+
+        PaymentCard card4 = new PaymentCard(10);
+        System.out.println("Paul: " + card4);
+        card4.addMoney(-15);
+        System.out.println("Paul: " + card4);
+
+
+
+        PaymentCard Paul = new PaymentCard(20);
+        PaymentCard Matt = new PaymentCard(30);
+        Paul.eatHeartily();
+        Matt.eatAffordably();
+        System.out.println("Paul: " + Paul);
+        System.out.println("Matt: " + Matt);
+        Paul.addMoney(20);
+        Matt.eatHeartily();
+        System.out.println("Paul: " + Paul);
+        System.out.println("Matt: " + Matt);
+        Paul.eatAffordably();
+        Paul.eatAffordably();
+        Matt.addMoney(50);
+        System.out.println("Paul: " + Paul);
+        System.out.println("Matt: " + Matt);
+
+
+
+
+
+
+
+
+    System.out.println(reader.readLine());
+    System.out.println(reader.readLine());
+    System.out.println(reader.readLine());
 
 
 
