@@ -184,14 +184,28 @@ Scanner scanner = new Scanner(System.in);
             // System.out.println(card);
 
 
- PaymentCard card2 = new PaymentCard(5);
-        System.out.println(card2);
+//  PaymentCard card2 = new PaymentCard(5);
+//         System.out.println(card2);
 
-        card2.eatHeartily();
-        System.out.println(card2);
+//         card2.eatHeartily();
+//         System.out.println(card2);
 
-        card2.eatHeartily();
-        System.out.println(card2);
+//         card2.eatHeartily();
+//         System.out.println(card2);
+
+
+        PaymentCard card3 = new PaymentCard(10);
+        System.out.println(card3);
+
+        card3.addMoney(15);
+        System.out.println(card3);
+
+        card3.addMoney(10);
+        System.out.println(card3);
+
+        card3.addMoney(200);
+        System.out.println(card3);
+
 
 
     }
