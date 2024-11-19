@@ -12,14 +12,45 @@ public class App
 {
     public static void main( String[] args) throws Exception
     {
+
     //  My code starts here
+
 Scanner scanner = new Scanner(System.in);
-BufferedReader reader = Utils.getReader("data.csv");
+BufferedReader reader = Utils.getReader("persons.csv");
+
+// ArrayList<Person> persons = new ArrayList<>();
+
+//1. Pievienot Person klassei setAge() metodi, lai piemērot vērtību personas vecumam
+
+//2. Izlastīt persons.csv failu
+//3. Un aizpildīt persons masīvu ar Person klases objektiem
+
+//4. Ar for-each ciklu printēt ar Person klases objektiem
+
+//5. Izvadīt vidējo personu vēcumu
+
 String line;
 
-while ((line = reader.readLine()) != null) {
-    System.out.println(line);
-}
+//line.split(", ");
+//String[] parts = {"name", "age", "weight", "height"};
+
+// Person pers1 = new Person(parts[0], parts[1], parts[2], parts[3]);
+// // persons.add(pers1);
+
+// //Ignore first line of csv
+// reader.readLine();
+// while ((line = reader.readLine()) != null) {
+    
+//     //Izveido Person objektu in ievieto
+//     //ArrayList masīvā šeit
+// }
+// reader.close();
+
+
+
+// while ((line = reader.readLine()) != null) {
+//     System.out.println(line);
+// }
 
 
 
@@ -219,39 +250,53 @@ while ((line = reader.readLine()) != null) {
 
 
 
-        PaymentCard card4 = new PaymentCard(10);
-        System.out.println("Paul: " + card4);
-        card4.addMoney(-15);
-        System.out.println("Paul: " + card4);
+        // PaymentCard card4 = new PaymentCard(10);
+        // System.out.println("Paul: " + card4);
+        // card4.addMoney(-15);
+        // System.out.println("Paul: " + card4);
 
 
 
-        PaymentCard Paul = new PaymentCard(20);
-        PaymentCard Matt = new PaymentCard(30);
-        Paul.eatHeartily();
-        Matt.eatAffordably();
-        System.out.println("Paul: " + Paul);
-        System.out.println("Matt: " + Matt);
-        Paul.addMoney(20);
-        Matt.eatHeartily();
-        System.out.println("Paul: " + Paul);
-        System.out.println("Matt: " + Matt);
-        Paul.eatAffordably();
-        Paul.eatAffordably();
-        Matt.addMoney(50);
-        System.out.println("Paul: " + Paul);
-        System.out.println("Matt: " + Matt);
-
-
-
-
+        // PaymentCard Paul = new PaymentCard(20);
+        // PaymentCard Matt = new PaymentCard(30);
+        // Paul.eatHeartily();
+        // Matt.eatAffordably();
+        // System.out.println("Paul: " + Paul);
+        // System.out.println("Matt: " + Matt);
+        // Paul.addMoney(20);
+        // Matt.eatHeartily();
+        // System.out.println("Paul: " + Paul);
+        // System.out.println("Matt: " + Matt);
+        // Paul.eatAffordably();
+        // Paul.eatAffordably();
+        // Matt.addMoney(50);
+        // System.out.println("Paul: " + Paul);
+        // System.out.println("Matt: " + Matt);
 
 
 
 
-    System.out.println(reader.readLine());
-    System.out.println(reader.readLine());
-    System.out.println(reader.readLine());
+    // System.out.println(reader.readLine());
+    // System.out.println(reader.readLine());
+    // System.out.println(reader.readLine());
+
+
+
+
+// Neprintēt kolonnu virsrakstus
+// Ouput: Id: <id>; username: <usrnm>; password: <pwd>
+// println() print()
+
+
+
+
+Product tapeMeasure = new Product("Tape measure");
+Product plaster = new Product("Plaster", "home improvement section");
+Product tyre = new Product("Tyre", 5);
+
+System.out.println(tapeMeasure);
+System.out.println(plaster);
+System.out.println(tyre);
 
 
 
