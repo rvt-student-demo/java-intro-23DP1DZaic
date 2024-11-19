@@ -16,7 +16,7 @@ public class App
     //  My code starts here
 
 Scanner scanner = new Scanner(System.in);
-BufferedReader reader = Utils.getReader("persons.csv");
+// BufferedReader reader = Utils.getReader("persons.csv");
 
 // ArrayList<Person> persons = new ArrayList<>();
 

@@ -7,6 +7,7 @@ public class Product {
     private String name;
     private String location;
     private int weight;
+    private String name2;
 
 
 
@@ -34,18 +35,31 @@ public class Product {
 
 
         public Product(String name) {
-            System.out.println("Tape measure (" + weight+1 + ") can be found from the" + location);
+            this.weight = weight;
+            this.location = location;
+            this.name2 = name2;
+            location = "shelf";
+            weight = 1;
+
+            System.out.println( name + " (" + weight + " kg) can be found from the " + location);
         }
 
 
 
         public Product(String name, String location) {
-
+            this.weight = weight;
+            this.location = location;
+            weight = 1;
+            System.out.println( name + " (" + weight + " kg) can be found from the " + location);
         }
 
 
 
         public Product(String name, int weight) {
+            this.weight = weight;
+            this.location = location;
+            location = "shelf";
+            System.out.println( name + " (" + weight + " kg) can be found from the " + location);
 
         }
 
