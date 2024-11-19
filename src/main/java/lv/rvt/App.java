@@ -91,7 +91,6 @@ String line;
 
 // counter.printValue();
 
-// counter.reset();
 // counter.printValue();
 
 // counter.decrement();
@@ -290,15 +289,23 @@ String line;
 
 
 
-Product tapeMeasure = new Product("Tape measure");
-Product plaster = new Product("Plaster", "home improvement section");
-Product tyre = new Product("Tyre", 5);
+// Product tapeMeasure = new Product("Tape measure");
+// Product plaster = new Product("Plaster", "home improvement section");
+// Product tyre = new Product("Tyre", 5);
 
-System.out.println(tapeMeasure);
-System.out.println(plaster);
-System.out.println(tyre);
+// System.out.println(tapeMeasure);
+// System.out.println(plaster);
+// System.out.println(tyre);
+
+Counter counter2 = new Counter(40);
+
+counter2.printValue();
 
 
+counter2.decrease();
+counter2.decrease();
+counter2.decrease();
+counter2.printValue();
 
     }
 }
