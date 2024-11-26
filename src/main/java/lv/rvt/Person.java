@@ -45,6 +45,10 @@ public String getName() {
     return this.name;
 }
 
+public String setName() {
+    this.name = name;
+    return(name);
+}
 
 //  Getter method
 

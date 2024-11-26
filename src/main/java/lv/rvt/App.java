@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public class App 
 {
+
     public static void main( String[] args) throws Exception
     {
 
@@ -306,6 +307,25 @@ counter2.decrease();
 counter2.decrease();
 counter2.decrease();
 counter2.printValue();
+
+
+
+
+
+
+
+System.out.println("Hello World");
+
+int number = 56;
+String name =  "enter your name: ";
+String userName = scanner.nextLine();
+
+System.out.println("Your name is " + userName);
+
+
+
+
+
 
     }
 }
