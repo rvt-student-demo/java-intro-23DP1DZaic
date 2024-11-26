@@ -314,18 +314,28 @@ counter2.printValue();
 
 
 
-System.out.println("Hello World");
+// System.out.println("Hello World");
 
-int number = 56;
-String name =  "enter your name: ";
-String userName = scanner.nextLine();
+// int number = 56;
+// String name =  "enter your name: ";
+// String userName = scanner.nextLine();
 
-System.out.println("Your name is " + userName);
-
-
+// System.out.println("Your name is " + userName);
 
 
 
 
-    }
+
+
+
+
+    BufferedReader reader = helper.getReader("persons.csv");
+
+    String row1 = reader.readLine();
+
+    String row2 = reader.readLine();
+
+    System.out.println(row1);
+    System.out.println(row2);
+}
 }
