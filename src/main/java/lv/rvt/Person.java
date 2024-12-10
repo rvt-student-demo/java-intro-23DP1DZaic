@@ -84,4 +84,30 @@ public String setName() {
 
 
 
+    public String toCsvRow() {
+        // Andrew, 20, 60, 182
+        return this.name + ", " + this.age + ", " + this.weight + ", " + this.height;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
+
+

@@ -2,6 +2,7 @@ package lv.rvt;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.nio.file.StandardOpenOption;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -11,12 +12,134 @@ import java.util.ArrayList;
 public class App 
 {
 
-    public static void main( String[] args) throws Exception
-    {
+    public static void main( String[] args, Person person) throws Exception{
+        Scanner scanner = new Scanner(System.in);
+        boolean isProgramRunning = true;
+
+        while (isProgramRunning) {
+            String command = scanner.nextLine();
+
+                if (command.equals("exit")) {
+                    System.out.println("Thanks, bye bye!");
+                    isProgramRunning = false;
+                } else if (command.equals("show")) {
+                    System.out.printf("--------------------------------------------------");
+                    System.out.printf("| Name | Age | Weight | Height | Body mass index |");
+                    System.out.printf("| Jack | 12  |");
+                    System.out.printf("| Jack | 12  |");
+                    System.out.printf("| Jack | 12  |");
+                    System.out.printf("| Jack | 12  |");
+                    System.out.printf("--------------------------------------------------");
+
+                    //Show persons using person manager
+            }
+        }
+        // System.out.println("Your command was: " + command);
+
+
+
+
+
+
+        PaymentCard petesCard = new PaymentCard(10);
+        System.out.println("money " + petesCard.balance());
+        boolean wasSuccessful = petesCard.takeMoney(8);
+        System.out.println("successfully withdrew: " + wasSuccessful);
+        System.out.println("money " + petesCard.balance());
+
+        wasSuccessful = petesCard.takeMoney(4);
+        System.out.println("successfully withdrew: " + wasSuccessful);
+        System.out.println("money " + petesCard.balance());
+
+
+
+
+
+
+//-------------------------
+
+
+
+
+
+            // while (true) {
+            //     System.out.println("Hello, choose your command");
+            //     System.out.println("show - shows all persons");
+            //     System.out.println("add - add a person");
+            //     System.out.println("exit - exit the program");
+            //     System.out.println("help - see available command");
+
+
+            //     //Izveidot iespēju lietotājam izvēlēties komandu kuru izpildīt
+
+            //     if (command.equals("show")) {
+            //         ArrayList<Person> persons = PersonManager.getPersonList();
+            //         for (Person person2 : persons) {
+            //             System.out.println(person);
+            //         }
+            //     }
+
+
+
+            //     else if (command.equals("add")) {
+            //     System.out.println("Please enter name: ");
+            //     String name = scanner.nextLine();
+            //     System.out.println("Please enter age: ");
+            //     int age = Integer.valueOf(scanner.nextLine());
+            //     System.out.println("Please enter weight: ");
+            //     int weight = Integer.valueOf(scanner.nextLine());
+            //     System.out.println("Please enter height: ");
+            //     int height = Integer.valueOf(scanner.nextLine());
+            // }
+
+
+
+
+
+
+            //     else if (command.equals("help")) {
+            //         System.out.println("Hello, choose your command");
+            //         System.out.println("show - shows all persons");
+            //         System.out.println("add - add a person");
+            //         System.out.println("exit - exit the program");
+            //         System.out.println("help - see available command");
+            //     }
+
+
+
+
+//------------------------------
+
+
+
+
+
+
+                // PersonManager.addPerson(person);
+                // }
+                // public static void modify(Person person) {
+                // person.setName("Modified!");
+                // }
+        
+                // helper.getWriter("persons.csv", StandardOpenOption.APPEND);
+        
+
+                
+
+
+
+
+        
+        //   Person person = new Person(name, age, weight, height);
+                // PersonManager.addPerson(person);
+
+            
+            //    Person person = new Person("Andrew", 17, 69, 182);
+            }
 
     //  My code starts here
 
-Scanner scanner = new Scanner(System.in);
+
 // BufferedReader reader = Utils.getReader("persons.csv");
 
 // ArrayList<Person> persons = new ArrayList<>();
@@ -30,7 +153,6 @@ Scanner scanner = new Scanner(System.in);
 
 //5. Izvadīt vidējo personu vēcumu
 
-String line;
 
 //line.split(", ");
 //String[] parts = {"name", "age", "weight", "height"};
@@ -298,15 +420,15 @@ String line;
 // System.out.println(plaster);
 // System.out.println(tyre);
 
-Counter counter2 = new Counter(40);
+// Counter counter2 = new Counter(40);
 
-counter2.printValue();
+// counter2.printValue();
 
 
-counter2.decrease();
-counter2.decrease();
-counter2.decrease();
-counter2.printValue();
+// counter2.decrease();
+// counter2.decrease();
+// counter2.decrease();
+// counter2.printValue();
 
 
 
@@ -329,13 +451,59 @@ counter2.printValue();
 
 
 
-    BufferedReader reader = helper.getReader("persons.csv");
+    // BufferedReader reader = helper.getReader("persons.csv");
 
-    String row1 = reader.readLine();
+    // String row1 = reader.readLine();
 
-    String row2 = reader.readLine();
+    // String row2 = reader.readLine();
 
-    System.out.println(row1);
-    System.out.println(row2);
+    // System.out.println(row1);
+    // System.out.println(row2);
+
+
+
+
+
+
+
+
+
+
+    // reader.readLine();
+    // reader.readLine();
+    // //
+
+    // String line2;
+    // reader.readLine(); //title row - mēs ignorējam pirmo rindu
+
+    // while ((line2 = reader.readLine()) != null) {
+    //     System.out.println(line2);
+
+
+    // String[] parts = line2.split(", ");
+    
+    // System.out.println("Name: " + parts[0] + ", age" + parts[1]);
+
+
+
+
+
+    // Kā uzzināt visu personu videjo vēcumu no dota csv faila ?
+
+    // int ageSum = 0;
+    // int ageCount = 0;
+
+    // ageSum += Integer.valueOf(parts[1]);
+    // ageCount ++ ;
+
+    // System.out.println(1.0 * ageSum / ageCount);
+
 }
-}
+
+
+
+
+
+
+
+
