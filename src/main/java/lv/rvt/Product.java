@@ -1,71 +1,36 @@
 package lv.rvt;
 
-public class Product {
+// camelCase
+// PascalCase
 
-    private double price;
-    private int quantity;
+public class Product {
     private String name;
     private String location;
     private int weight;
-    private String name2;
 
-
-
-    // Automatically created constructor method
-    // by Java
-
-
-
-//Constructor
-    public Product (String initialName, double initialPrice, int initialQuantity) {
-
-        this.price = initialPrice;
-        this.quantity = initialQuantity;
-        this.name = initialName;
+    // Automatically created  constructor method by Java
+    public Product (String name, String location, int weight) {
+        this.name = name;
+        this.location = location;
+        this.weight = weight;
     }
 
-
-        public void printProduct() {
-            // Banana, price 1.1, 13 pcs
-            System.out.println(
-                this.name + ", price " + this.price + ", " + this.quantity + " pcs"
-            );
-        }
-
-
-
-        public Product(String name) {
-            this.weight = weight;
-            this.location = location;
-            this.name2 = name2;
-            location = "shelf";
-            weight = 1;
-
-            System.out.println( name + " (" + weight + " kg) can be found from the " + location);
-        }
-
-
-
-        public Product(String name, String location) {
-            this.weight = weight;
-            this.location = location;
-            weight = 1;
-            System.out.println( name + " (" + weight + " kg) can be found from the " + location);
-        }
-
-
-
-        public Product(String name, int weight) {
-            this.weight = weight;
-            this.location = location;
-            location = "shelf";
-            System.out.println( name + " (" + weight + " kg) can be found from the " + location);
-
-        }
-
-
+    public Product (String name, String location) {
+        this(name, location, 1);
     }
 
+    public Product(String name, int weight) {
+        this(name, "shelf", weight);
+    }
+
+    public Product(String name) {
+        this(name, "shelf", 1);
+    }
+
+    public String toString() {
+        return this.name + " (" + this.weight + " kg) can be found from the " + this.location;
+    }
+}
 
 
 

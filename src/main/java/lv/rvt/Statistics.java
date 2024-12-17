@@ -2,31 +2,25 @@ package lv.rvt;
 
 public class Statistics {
     private int count;
-    
-        public Statistics() {
-            int numberCount = 0;
+    private int sum;
+    public Statistics() {
+        this.count = 0;
     }
-    
-        public void addNumber(int number) {
-            int sum = 0;
-            this.count = count + 1;
-}
-    
 
-        public int getCount() {
-            return this.count;
-}
+    public void addNumber(int number) {
+        this.count ++;
+        this.sum += number;
+    }
 
-    
-        public int sum() {
-        //
-        return 0;
+    public int getCount() {
+        return this.count;
+    }
+
+    public int sum() {
+        return this.sum;
     }
 
     public double average() {
-        //
-        //
-        //
-        return 0;
+        return this.sum()/(this.getCount()*1.0);
     }
 }
