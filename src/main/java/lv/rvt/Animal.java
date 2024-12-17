@@ -8,7 +8,10 @@ public class Animal {
     }
 
 
+    // Ja mēs negribam izmantot tavu default toString metodi
+    // Mēs izmantosim savu realizāciju
+    @Override
     public String toString() {
-        return "This is an animal: " + this.name;
+        return "This animal is " + this.name;
     }
 }

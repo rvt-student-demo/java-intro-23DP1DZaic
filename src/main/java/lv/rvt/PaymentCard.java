@@ -16,6 +16,9 @@ public class PaymentCard {
         this.balance = this.balance + increase;
     }
 
+
+
+
     public boolean takeMoney(double amount) {
         if (balance < amount) {
             System.out.println("Your card doesn't have sufficient funds.");
@@ -26,79 +29,6 @@ public class PaymentCard {
                 return true;
             }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
