@@ -31,6 +31,3 @@ public class Product {
         return this.name + " (" + this.weight + " kg) can be found from the " + this.location;
     }
 }
-
-
-

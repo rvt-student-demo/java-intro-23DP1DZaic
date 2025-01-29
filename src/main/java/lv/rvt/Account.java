@@ -26,9 +26,3 @@ public class Account {
     return this.owner + " balance: " + this.balance;
     } 
 }
-
-    // MathewAccount.withdraw(100);
-    // System.out.println("The balance of Mathew's account is now: " + MathewAccount.balance());
-    // MyAccount.deposit(100);
-    // System.out.println("The balance of my account is now: " + MyAccount.balance());
-    
