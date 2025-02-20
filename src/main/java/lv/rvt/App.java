@@ -9,29 +9,39 @@ import javax.sound.midi.Soundbank;
 import lv.rvt.connecticut.Box; 
  
 public class App { 
-    public static void main ( String[] args )
-    {
+    public static void main ( String[] args ) throws Exception {
 
-        // ProductWarehouse juice = new ProductWarehouse("Juice", 1000.0);
-        // juice.addToWarehouse(1000.0);
-        // juice.takeFromWarehouse(11.3);
-        // System.out.println(juice.getName()); // Juice
-        // System.out.println(juice);           // balance = 988.7, space left 11.3
+//         System.out.print(ConsoleColors.RED);
+//         System.out.print(ConsoleColors.BLUE_BACKGROUND);
+//         System.out.println("Hello Red color and blue background!");
 
 
 
+ //vai
 
 
+// System.out.print(
+//         ConsoleColors.RED + ConsoleColors.BLUE_BACKGROUND +
 
+//         "Hello Red color and Blue background!"
 
+//         + ConsoleColors.RESET
+// );
 
 
 
+for(int i = 0; i < 10; i++) {
+    System.out.print(ConsoleColors.GREEN_BACKGROUND + "  ");
+}
 
+System.out.println();
+System.out.print(ConsoleColors.RESET);
 
 
 
+    System.out.println(""); // "txt"'+ \'
 
+    System.out.print(""); // "txt"
 
 
 
@@ -42,91 +52,18 @@ public class App {
 
 
 
+        //Immutable and mutable
+        //Nemaināms un maināms
 
+        final String name = "John";
+    // final nozīme ka mainīgais nav mainīt (immutable)
 
 
+        //name = "Peteris";
+    // The final local variable name cannot be assigned.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//         Person person1 = new Person("John", "USA");
-//         Student student1 = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
-//         Teacher teacher1 = new Teacher("Dima", "Italy");
-
-//         // System.out.println(
-//         //     teacher1.toString()
-//         //     );
-
-
-
-
-//             Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
-//             System.out.println(ollie);
-//             ollie.study();
-//             System.out.println(ollie);
-
-
-
-// // TODO
-//             // Teacher ada = new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200);
-//             // Teacher esko = new Teacher("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki", 5400);
-//             // System.out.println(ada);
-//             // System.out.println(esko);
-            
-//             // Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
-            
-//             // int i = 0;
-//             // while (i < 25) {
-//             //   ollie.study();
-//             //   i = i + 1;
-//             // }
-//             // System.out.println(ollie);
-
-
-
-
-
-
-
-
-    }
-
+    
+}
 }

@@ -1,33 +1,31 @@
-package lv.rvt;
-
-import java.security.AllPermission;
+package lv.rvt.java.mooc;
 
 public class Warehouse {
     private double capacity;
     private double balance;
-
+ 
     public Warehouse(double capacity) {
         if (capacity > 0.0) {
             this.capacity = capacity;
         } else {
             this.capacity = 0.0;
         }
-
+ 
         this.balance = 0.0;
     }
 
     public double getBalance() {
         return this.balance;
     }
-
+ 
     public double getCapacity() {
         return this.capacity;
     }
-
+ 
     public double howMuchSpaceLeft() {
         return this.capacity - this.balance;
     }
-
+ 
     public void addToWarehouse(double amount) {
         if (amount < 0) {
             return;
@@ -38,9 +36,9 @@ public class Warehouse {
             this.balance = this.capacity;
         }
     }
-
-    public double takeFromWarehose(double amount) {
-        if (amount < 0) {
+ 
+    public double takeFromWarehouse(double amount) {
+        if (amount < 0 && this.balance - amount < 0) {
             return 0.0;
         }
         if (amount > this.balance) {
@@ -48,32 +46,12 @@ public class Warehouse {
             this.balance = 0.0;
             return allThatWeCan;
         }
+ 
         this.balance = this.balance - amount;
         return amount;
     }
-
-    public string toString() {
-        return "balance = " + this.balance + ", space left = " + howMuchSpaceLeft();
-    }
-
-}
-
-public class ProductWarehouse extends Warehouse {
-    
-    public ProductWarehouse(String productName, double capacity) {
-        super(productName, capacity);
-        this.productName = productName;
-
-
-
-
-
-
-
-        
-    }
-
-    public String getName() {
-        
+ 
+    public String toString() {
+        return "balance = " + this.balance + ", space left " + howMuchSpaceLeft();
     }
 }
